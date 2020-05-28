@@ -1,0 +1,11 @@
+--- 
+- 
+  hosts: all
+  name: "Execute two commands on all hosts"
+  tasks: 
+    - 
+      command: date
+      name: "Execute a date command"
+    - 
+      command: "cat /etc/hosts"
+      name: "Execute a command to display hosts file"
